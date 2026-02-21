@@ -53,3 +53,10 @@ const textResponse = response.text; // Direct property access
 - explain project : redis
 - dsa for Interviews exlanation
 - "design structure to answer the question"
+- details were missing
+
+
+
+// deployment:
+- Build Command: npm install && npm install --prefix Frontend && npm run build --prefix Frontend
+- Start Command: node Backend/src/index.js

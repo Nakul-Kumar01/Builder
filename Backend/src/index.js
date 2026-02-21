@@ -16,7 +16,7 @@ const _dirname = path.resolve();
 
 
 app.use(cors({
-    origin : "https://builder.onrender.com",
+    origin : "https://webbuilder-0f19.onrender.com",
     credentials: true 
 }))
 app.use(express.json());
