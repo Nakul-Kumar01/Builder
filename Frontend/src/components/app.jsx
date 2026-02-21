@@ -3,9 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import BackgroundAnimation from './Background';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
-import { instruction } from './Instruction';
-import { submitCodeTool, enhancePromptTool } from './tools';
-import axiosClient from '../utils/axiosClient';
+
 
 
 
@@ -978,10 +976,10 @@ export default function App() {
 // import { submitCodeTool, enhancePromptTool } from './tools';
 
 // // --- Configuration ---
-// const genAI = new GoogleGenerativeAI("AIzaSyAONmEuopx7PdyFNlm4f4Ahbmi-wgv1IDM");
-// // luGbsFZyj9vjNQe9aWGXcEa2
-// const VERCEL_TOKEN = "0RxQJ3qfrHOO9DYVssZmciff"; // Replace with your Vercel API token
-// // const VERCEL_PROJECT_ID = "prj_LQPCoezuwnmTSYqVMqOpJJDoviYQ";
+// const genAI = new GoogleGenerativeAI("");
+// // 
+// const VERCEL_TOKEN = ""; // Replace with your Vercel API token
+// // const VERCEL_PROJECT_ID = "";
 
 // const quickStart = [{ q: "Business", text: "build a Business Landing Page with professional layout and responsive design." },
 // { q: "Blog", text: "Create a personal Blog website with a homepage, blog post layout, and categories." },
