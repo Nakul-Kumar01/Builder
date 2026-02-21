@@ -33,7 +33,8 @@ app.use('/vercel',deployRouter);
 
 // serving Frontend
 app.use(express.static(path.join(_dirname, "Frontend", "dist")));
-app.get("*", (req, res) => {
+
+app.use((req, res) => {
     res.sendFile(path.join(_dirname, "Frontend", "dist", "index.html"));
 });
 
