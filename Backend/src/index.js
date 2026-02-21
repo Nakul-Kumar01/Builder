@@ -32,10 +32,10 @@ app.use('/vercel',deployRouter);
 
 
 // serving Frontend
-app.use(express.static(path.join(_dirname, "/Frontend/dist"))); // This is middleware : Serve all static files inside this folder automatically
-app.get((req ,res)=>{  // If user goes directly to frontend routes -> Server doesn’t know these routes (they are frontend routes) -> For any route not handled above → send index.html // Then React Router takes control.
-    res.sendFile(path.resolve(_dirname, "Frontend","dist","index.html"));  // This handles React Router routes.
-})
+app.use(express.static(path.join(_dirname, "Frontend", "dist")));
+app.get("*", (req, res) => {
+    res.sendFile(path.join(_dirname, "Frontend", "dist", "index.html"));
+});
 
 
 
