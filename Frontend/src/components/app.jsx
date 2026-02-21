@@ -53,7 +53,7 @@ export default function App() {
 
   try {
     // Use native fetch so we can read the stream
-    const response = await fetch("http://localhost:3000/ai/generate", {
+    const response = await fetch("https://builder.onrender.com/ai/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -358,7 +358,7 @@ export default function App() {
   setDeployedUrl('');
 
   try {
-    const response = await fetch("http://localhost:3000/vercel/deploy", {
+    const response = await fetch("https://builder.onrender.com/vercel/deploy", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
