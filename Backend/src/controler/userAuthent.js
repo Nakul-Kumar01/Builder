@@ -17,7 +17,7 @@ const register = async (req, res) => {
             _id: user._id
         }
 
-        const token = jwt.sign({ _id: user._id, emailId:user.emailId }, process.env.JWT_kEY, { expiresIn: '1h' });
+        const token = jwt.sign({ _id: user._id, emailId:user.emailId }, process.env.JWT_KEY, { expiresIn: '1h' });
 
         res.cookie('token', token, { maxAge: 60 * 60 * 1000 }); // you can also use expire 
         res.status(201).json({
