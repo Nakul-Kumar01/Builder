@@ -48,7 +48,7 @@ export default function Login() {
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="card flex-shrink-0  w-full max-w-md shadow-2xl bg-[#061021]"
+                className="card shrink-0  w-full max-w-md shadow-2xl bg-[#061021]"
             >
 
                 <div className="absolute bottom-0 right-0 w-[500px] h-[500px] z-[-1] bg-[#6A56F4]/30 rounded-full blur-[180px]" />
@@ -61,28 +61,26 @@ export default function Login() {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <defs>
-                                <linearlinear id="builderlinear" x1="0" y1="0" x2="1" y2="0">
+                                <linearGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
                                     <stop offset="0%" stopColor="#00C6FF" />
                                     <stop offset="100%" stopColor="#0072FF" />
-                                </linearlinear>
+                                </linearGradient>
                             </defs>
 
                             {/* Icon */}
                             <g transform="translate(15,15)">
-                                {/* Outer Circle */}
                                 <circle
                                     cx="35"
                                     cy="35"
                                     r="30"
-                                    stroke="url(#builderlinear)"
+                                    stroke="url(#builderGradient)"
                                     strokeWidth="4"
                                     fill="none"
                                 />
 
-                                {/* Hammer Shape */}
                                 <path
                                     d="M25 45 L50 20"
-                                    stroke="url(#builderlinear)"
+                                    stroke="url(#builderGradient)"
                                     strokeWidth="5"
                                     strokeLinecap="round"
                                 />
@@ -94,7 +92,7 @@ export default function Login() {
                                     height="8"
                                     rx="2"
                                     transform="rotate(45 48 15)"
-                                    fill="url(#builderlinear)"
+                                    fill="url(#builderGradient)"
                                 />
                             </g>
 
@@ -105,7 +103,7 @@ export default function Login() {
                                 fontSize="36"
                                 fontWeight="700"
                                 fontFamily="Poppins, sans-serif"
-                                fill="url(#builderlinear)"
+                                fill="url(#builderGradient)"
                             >
                                 Build
                             </text>

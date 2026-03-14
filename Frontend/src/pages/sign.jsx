@@ -105,28 +105,26 @@ export default function Signup() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
-                <linearlinear id="builderlinear" x1="0" y1="0" x2="1" y2="0">
+                <linearGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0%" stopColor="#00C6FF" />
                   <stop offset="100%" stopColor="#0072FF" />
-                </linearlinear>
+                </linearGradient>
               </defs>
 
               {/* Icon */}
               <g transform="translate(15,15)">
-                {/* Outer Circle */}
                 <circle
                   cx="35"
                   cy="35"
                   r="30"
-                  stroke="url(#builderlinear)"
+                  stroke="url(#builderGradient)"
                   strokeWidth="4"
                   fill="none"
                 />
 
-                {/* Hammer Shape */}
                 <path
                   d="M25 45 L50 20"
-                  stroke="url(#builderlinear)"
+                  stroke="url(#builderGradient)"
                   strokeWidth="5"
                   strokeLinecap="round"
                 />
@@ -138,7 +136,7 @@ export default function Signup() {
                   height="8"
                   rx="2"
                   transform="rotate(45 48 15)"
-                  fill="url(#builderlinear)"
+                  fill="url(#builderGradient)"
                 />
               </g>
 
@@ -149,7 +147,7 @@ export default function Signup() {
                 fontSize="36"
                 fontWeight="700"
                 fontFamily="Poppins, sans-serif"
-                fill="url(#builderlinear)"
+                fill="url(#builderGradient)"
               >
                 Build
               </text>
