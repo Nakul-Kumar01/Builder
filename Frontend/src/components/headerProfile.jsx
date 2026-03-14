@@ -32,10 +32,10 @@ export default function HeaderProfile() {
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <defs>
-                        <linearlinear id="builderlinear" x1="0" y1="0" x2="1" y2="0">
+                        <GradientGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
                             <stop offset="0%" stopColor="#00C6FF" />
                             <stop offset="100%" stopColor="#0072FF" />
-                        </linearlinear>
+                        </GradientGradient>
                     </defs>
 
                     {/* Icon */}
@@ -45,7 +45,7 @@ export default function HeaderProfile() {
                             cx="35"
                             cy="35"
                             r="30"
-                            stroke="url(#builderlinear)"
+                            stroke="url(#builderGradient)"
                             strokeWidth="4"
                             fill="none"
                         />
@@ -53,7 +53,7 @@ export default function HeaderProfile() {
                         {/* Hammer Shape */}
                         <path
                             d="M25 45 L50 20"
-                            stroke="url(#builderlinear)"
+                            stroke="url(#builderGradient)"
                             strokeWidth="5"
                             strokeLinecap="round"
                         />
@@ -65,7 +65,7 @@ export default function HeaderProfile() {
                             height="8"
                             rx="2"
                             transform="rotate(45 48 15)"
-                            fill="url(#builderlinear)"
+                            fill="url(#builderGradient)"
                         />
                     </g>
 
@@ -76,7 +76,7 @@ export default function HeaderProfile() {
                         fontSize="36"
                         fontWeight="700"
                         fontFamily="Poppins, sans-serif"
-                        fill="url(#builderlinear)"
+                        fill="url(#builderGradient)"
                     >
                         Build
                     </text>
