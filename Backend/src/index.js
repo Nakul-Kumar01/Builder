@@ -16,7 +16,7 @@ require("dotenv").config();
 
 
 app.use(cors({
-    origin : "https://webbuilder-0f19.onrender.com",
+    origin : "https://builder-orcin.vercel.app",
     credentials: true 
 }))
 app.use(express.json());

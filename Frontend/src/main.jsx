@@ -16,6 +16,7 @@ import Login from './pages/login'
 import Signup from './pages/sign'
 import { StrictMode } from 'react'
 import store from './store/store'
+import axiosClient from './utils/axiosClient'
 
 function Main(){
 
@@ -24,6 +25,16 @@ function Main(){
       duration: 1000, // Animation duration in milliseconds
       once: true, // Whether animation should happen only once
     });
+
+    const ping = async () => {
+          try{
+            const res = await axiosClient.get("/health");
+          }
+          catch(err){
+            console.log(err);
+          }
+        }
+        ping();
   }, []);
 
 
