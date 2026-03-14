@@ -32,15 +32,14 @@ export default function HeaderProfile() {
                     xmlns="http://www.w3.org/2000/svg"
                 >
                     <defs>
-                        <GradientGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
+                        <linearGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
                             <stop offset="0%" stopColor="#00C6FF" />
                             <stop offset="100%" stopColor="#0072FF" />
-                        </GradientGradient>
+                        </linearGradient>
                     </defs>
 
                     {/* Icon */}
                     <g transform="translate(15,15)">
-                        {/* Outer Circle */}
                         <circle
                             cx="35"
                             cy="35"
@@ -50,7 +49,6 @@ export default function HeaderProfile() {
                             fill="none"
                         />
 
-                        {/* Hammer Shape */}
                         <path
                             d="M25 45 L50 20"
                             stroke="url(#builderGradient)"
