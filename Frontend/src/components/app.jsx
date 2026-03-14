@@ -478,7 +478,7 @@ export default function App() {
                   </div>
                 </h1>
                 <div className="flex justify-center mt-4">
-                  <div className={`w-12 h-1 bg-gradient-to-r from-indigo-500 to-cyan-500 ${isInitialState ? 'text-5xl sm:text-5xl' : 'hidden text-3xl'} rounded-full animate-pulse`}></div>
+                  <div className={`w-12 h-1 bg-linear-to-r from-indigo-500 to-cyan-500 ${isInitialState ? 'text-5xl sm:text-5xl' : 'hidden text-3xl'} rounded-full animate-pulse`}></div>
                 </div>
                 <p className={`text-gray-400 mt-6 transition-all duration-1000 ease-out ${isInitialState ? 'text-lg' : 'hidden text-sm'}`}>
                   Transform your ideas into production-ready code with AI assistance
@@ -526,7 +526,7 @@ export default function App() {
                 <button
                   onClick={() => generateCode(false)}
                   disabled={isLoading || !prompt.trim()}
-                  className="flex-1 py-3 px-6 cursor-pointer bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium rounded-xl hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 ease-out disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
+                  className="flex-1 py-3 px-6 cursor-pointer bg-linear-to-r from-indigo-600 to-indigo-500 text-white font-medium rounded-xl hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 ease-out disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
                 >
                   {isLoading ? (
                     <span className="flex items-center justify-center gap-2">
@@ -537,7 +537,7 @@ export default function App() {
                     <>
                       <span className="hidden sm:block relative z-10">Generate Code</span>
                       <span className="block sm:hidden relative z-10">Code</span>
-                      <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="absolute inset-0 bg-linear-to-r from-indigo-500 to-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     </>
                   )}
                 </button>
@@ -614,13 +614,13 @@ export default function App() {
             }</div>
 
             {aiResponse && (
-              <div className="mt-6 p-8 bg-gradient-to-br from-gray-700/60 to-gray-800/60 border border-gray-600 rounded-2xl backdrop-blur-sm shadow-2xl shadow-gray-900/30">
+              <div className="mt-6 p-8 bg-linear-to-br from-gray-700/60 to-gray-800/60 border border-gray-600 rounded-2xl backdrop-blur-sm shadow-2xl shadow-gray-900/30">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse shadow-lg shadow-cyan-400/50"></div>
                   <span className="text-lg font-semibold text-cyan-400 flex items-center gap-2">
                     Here's my Plan ⌯⌲
                   </span>
-                  <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
+                  <div className="flex-1 h-px bg-linear-to-r from-cyan-400/50 to-transparent"></div>
                 </div>
 
                 <div className="bg-gray-900/40 rounded-xl p-6 border border-gray-600/50 backdrop-blur-sm">
@@ -636,7 +636,7 @@ export default function App() {
                             const emoji = level === 1 ? '🎯 ' : level === 2 ? '✨ ' : level === 3 ? '💡 ' : '🔹 ';
                             const sizeClass = level === 1 ? 'text-2xl' : level === 2 ? 'text-xl' : 'text-lg';
                             const colorClass = level === 1 ? 'text-cyan-300' : level === 2 ? 'text-indigo-300' : 'text-purple-300';
-                            return `<h${level} class="font-bold ${sizeClass} ${colorClass} mb-4 mt-6 flex items-center gap-2 border-l-4 border-cyan-400 pl-4 bg-gradient-to-r from-cyan-900/20 to-transparent py-2 rounded-r-lg">${emoji}${title}</h${level}>`;
+                            return `<h${level} class="font-bold ${sizeClass} ${colorClass} mb-4 mt-6 flex items-center gap-2 border-l-4 border-cyan-400 pl-4 bg-linear-to-r from-cyan-900/20 to-transparent py-2 rounded-r-lg">${emoji}${title}</h${level}>`;
                           })
                           // Enhance bullet points with emojis
                           .replace(/^\* (.+)$/gm, '<li class="flex items-start gap-2 mb-2"><span class="text-cyan-400 mt-1">🔸</span><span class="text-gray-300">$1</span></li>')
@@ -701,25 +701,25 @@ export default function App() {
                   <button
                     onClick={() => setCop('code')}
                     className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all duration-200 ease-out relative overflow-hidden ${cop === 'code'
-                      ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-lg'
+                      ? 'bg-linear-to-r from-indigo-600 to-indigo-500 text-white shadow-lg'
                       : 'text-gray-400 hover:text-gray-200 hover:bg-gray-700'
                       }`}
                   >
                     <span className="relative z-10">Code Editor</span>
                     {cop === 'code' && (
-                      <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="absolute inset-0 bg-linear-to-r from-indigo-500 to-indigo-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
                     )}
                   </button>
                   <button
                     onClick={() => setCop('preview')}
                     className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all duration-200 ease-out ml-3 relative overflow-hidden ${cop === 'preview'
-                      ? 'bg-gradient-to-r from-purple-600 to-purple-500 text-white shadow-lg'
+                      ? 'bg-linear-to-r from-purple-600 to-purple-500 text-white shadow-lg'
                       : 'text-gray-400 hover:text-gray-200 hover:bg-gray-700'
                       }`}
                   >
                     <span className="relative z-10">Live Preview</span>
                     {cop === 'preview' && (
-                      <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="absolute inset-0 bg-linear-to-r from-purple-500 to-purple-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
                     )}
                   </button>
                   <button
@@ -738,7 +738,7 @@ export default function App() {
                   {cop === 'code' ? (
                     <div className="flex flex-col h-full min-h-0">
                       {/* Language Tabs */}
-                      <div className="flex gap-2 mb-4 flex-shrink-0">
+                      <div className="flex gap-2 mb-4 shrink-0">
                         {[
                           { key: 'HTML', color: 'bg-orange-900/30 text-orange-400 hover:bg-orange-900/40' },
                           { key: 'CSS', color: 'bg-blue-900/30 text-blue-400 hover:bg-blue-900/40' },
@@ -759,7 +759,7 @@ export default function App() {
 
                       {/* Code Display */}
                       <div className="flex-1 bg-gray-900 rounded-xl overflow-hidden flex flex-col min-h-0 border border-gray-700">
-                        <div className="bg-gray-800 px-4 py-3 flex justify-between items-center flex-shrink-0 border-b border-gray-700">
+                        <div className="bg-gray-800 px-4 py-3 flex justify-between items-center shrink-0 border-b border-gray-700">
                           <span className="font-mono text-sm text-gray-400">
                             {lang === 'HTML' && 'HTML Structure'}
                             {lang === 'CSS' && 'CSS Styling'}
@@ -798,7 +798,7 @@ export default function App() {
                     </div>
                   ) : (
                     <div className="flex flex-col h-full min-h-0">
-                      <div className="bg-gray-700 px-3 py-2 rounded-t-xl flex flex-shrink-0 border-b border-gray-600">
+                      <div className="bg-gray-700 px-3 py-2 rounded-t-xl flex shrink-0 border-b border-gray-600">
                         <span className="font-mono text-sm text-gray-300 flex items-center">Live<span className="w-2 h-2 bg-red-500 rounded-full ml-1 animate-pulse"></span></span>
                         <div className='ml-10 flex'>
                           {/* <a href='https://vercel.com/' target='_blank'><div className='bg-black rounded-3xl px-2 py-0.5 text-white font-extralight mr-3'><span className='text-white mx-0.5'>▲</span>Vercel</div></a> */}
@@ -1360,7 +1360,7 @@ export default function App() {
 //                   </div>
 //                 </h1>
 //                 <div className="flex justify-center mt-4">
-//                   <div className={`w-12 h-1 bg-gradient-to-r from-indigo-500 to-cyan-500 ${isInitialState ? 'text-5xl sm:text-5xl' : 'hidden text-3xl'} rounded-full animate-pulse`}></div>
+//                   <div className={`w-12 h-1 bg-linear-to-r from-indigo-500 to-cyan-500 ${isInitialState ? 'text-5xl sm:text-5xl' : 'hidden text-3xl'} rounded-full animate-pulse`}></div>
 //                 </div>
 //                 <p className={`text-gray-400 mt-6 transition-all duration-1000 ease-out ${isInitialState ? 'text-lg' : 'hidden text-sm'}`}>
 //                   Transform your ideas into production-ready code with AI assistance
@@ -1408,7 +1408,7 @@ export default function App() {
 //                 <button
 //                   onClick={() => generateCode(false)}
 //                   disabled={isLoading || !prompt.trim()}
-//                   className="flex-1 py-3 px-6 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium rounded-xl hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 ease-out disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
+//                   className="flex-1 py-3 px-6 bg-linear-to-r from-indigo-600 to-indigo-500 text-white font-medium rounded-xl hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 ease-out disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
 //                 >
 //                   {isLoading ? (
 //                     <span className="flex items-center justify-center gap-2">
@@ -1419,7 +1419,7 @@ export default function App() {
 //                     <>
 //                       <span className="hidden sm:block relative z-10">Generate Code</span>
 //                       <span className="block sm:hidden relative z-10">Code</span>
-//                       <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+//                       <span className="absolute inset-0 bg-linear-to-r from-indigo-500 to-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
 //                     </>
 //                   )}
 //                 </button>
@@ -1496,13 +1496,13 @@ export default function App() {
 //             }</div>
 
 //             {aiResponse && (
-//               <div className="mt-6 p-8 bg-gradient-to-br from-gray-700/60 to-gray-800/60 border border-gray-600 rounded-2xl backdrop-blur-sm shadow-2xl shadow-gray-900/30">
+//               <div className="mt-6 p-8 bg-linear-to-br from-gray-700/60 to-gray-800/60 border border-gray-600 rounded-2xl backdrop-blur-sm shadow-2xl shadow-gray-900/30">
 //                 <div className="flex items-center gap-3 mb-6">
 //                   <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse shadow-lg shadow-cyan-400/50"></div>
 //                   <span className="text-lg font-semibold text-cyan-400 flex items-center gap-2">
 //                     Here's my Plan ⌯⌲
 //                   </span>
-//                   <div className="flex-1 h-px bg-gradient-to-r from-cyan-400/50 to-transparent"></div>
+//                   <div className="flex-1 h-px bg-linear-to-r from-cyan-400/50 to-transparent"></div>
 //                 </div>
 
 //                 <div className="bg-gray-900/40 rounded-xl p-6 border border-gray-600/50 backdrop-blur-sm">
@@ -1518,7 +1518,7 @@ export default function App() {
 //                             const emoji = level === 1 ? '🎯 ' : level === 2 ? '✨ ' : level === 3 ? '💡 ' : '🔹 ';
 //                             const sizeClass = level === 1 ? 'text-2xl' : level === 2 ? 'text-xl' : 'text-lg';
 //                             const colorClass = level === 1 ? 'text-cyan-300' : level === 2 ? 'text-indigo-300' : 'text-purple-300';
-//                             return `<h${level} class="font-bold ${sizeClass} ${colorClass} mb-4 mt-6 flex items-center gap-2 border-l-4 border-cyan-400 pl-4 bg-gradient-to-r from-cyan-900/20 to-transparent py-2 rounded-r-lg">${emoji}${title}</h${level}>`;
+//                             return `<h${level} class="font-bold ${sizeClass} ${colorClass} mb-4 mt-6 flex items-center gap-2 border-l-4 border-cyan-400 pl-4 bg-linear-to-r from-cyan-900/20 to-transparent py-2 rounded-r-lg">${emoji}${title}</h${level}>`;
 //                           })
 //                           // Enhance bullet points with emojis
 //                           .replace(/^\* (.+)$/gm, '<li class="flex items-start gap-2 mb-2"><span class="text-cyan-400 mt-1">🔸</span><span class="text-gray-300">$1</span></li>')
@@ -1583,25 +1583,25 @@ export default function App() {
 //                   <button
 //                     onClick={() => setCop('code')}
 //                     className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all duration-200 ease-out relative overflow-hidden ${cop === 'code'
-//                       ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-lg'
+//                       ? 'bg-linear-to-r from-indigo-600 to-indigo-500 text-white shadow-lg'
 //                       : 'text-gray-400 hover:text-gray-200 hover:bg-gray-700'
 //                       }`}
 //                   >
 //                     <span className="relative z-10">Code Editor</span>
 //                     {cop === 'code' && (
-//                       <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+//                       <span className="absolute inset-0 bg-linear-to-r from-indigo-500 to-indigo-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
 //                     )}
 //                   </button>
 //                   <button
 //                     onClick={() => setCop('preview')}
 //                     className={`flex-1 py-3 px-6 rounded-lg font-medium transition-all duration-200 ease-out ml-3 relative overflow-hidden ${cop === 'preview'
-//                       ? 'bg-gradient-to-r from-purple-600 to-purple-500 text-white shadow-lg'
+//                       ? 'bg-linear-to-r from-purple-600 to-purple-500 text-white shadow-lg'
 //                       : 'text-gray-400 hover:text-gray-200 hover:bg-gray-700'
 //                       }`}
 //                   >
 //                     <span className="relative z-10">Live Preview</span>
 //                     {cop === 'preview' && (
-//                       <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-purple-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+//                       <span className="absolute inset-0 bg-linear-to-r from-purple-500 to-purple-400 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
 //                     )}
 //                   </button>
 //                   <button

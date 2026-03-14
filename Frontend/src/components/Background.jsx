@@ -72,7 +72,7 @@ const BackgroundAnimation = () => {
       ref={canvasRef}
       className="absolute top-0 left-0 w-full h-full pointer-events-none"
       style={{
-        background: 'linear-gradient(to bottom, #1E2939, #1E2939, #2A2825)',
+        background: 'linear-linear(to bottom, #1E2939, #1E2939, #2A2825)',
       }}
     />
   );

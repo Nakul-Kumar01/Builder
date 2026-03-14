@@ -68,7 +68,7 @@ export default function About() {
               <h3 className="ml-3 text-lg font-semibold">Expanded AI Response Display</h3>
             </div>
             <p className="text-sm">
-              The AI response section is prominently displayed in a larger, scrollable area with a gradient background, making it easy to read detailed responses from the AI. 
+              The AI response section is prominently displayed in a larger, scrollable area with a linear background, making it easy to read detailed responses from the AI. 
             </p>
           </div>
 

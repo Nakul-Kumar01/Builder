@@ -64,12 +64,12 @@ you have not to use Images which you doesn't have as it not looking good if ther
        • Adds life to hero sections  
        • Use setInterval or "requestAnimationFrame"
      
-     ✔ **Animated Gradient Background**
-       • Use CSS "@keyframes" for a vibrant, moving gradient  
+     ✔ **Animated linear Background**
+       • Use CSS "@keyframes" for a vibrant, moving linear  
        • Example:
          \`\`\`css
-         background: linear-gradient(270deg, #ff4d4d, #0099ff, #66ff66);
-         animation: gradientShift 12s ease infinite;
+         background: linear-linear(270deg, #ff4d4d, #0099ff, #66ff66);
+         animation: linearShift 12s ease infinite;
          \`\`\`
 
 ✔ **Animations and Effects**
@@ -91,7 +91,7 @@ you have not to use Images which you doesn't have as it not looking good if ther
 
 ✔ **Animated Skill Bars / Progress Indicators**
    • Animate bar widths on scroll  
-   • Use circular conic-gradient for visual flair
+   • Use circular conic-linear for visual flair
 
 ✔ **Project Grid with Hover Reveal**
    • Flip or expand cards on hover  

@@ -42,7 +42,7 @@ export default function Login() {
     }
 
     return (
-        <div className='max-w-screen w-full h-screen flex flex-col items-center justify-center  bg-gradient-to-b from-[#061021] via-[#071428] to-[#08122a] relative overflow-hidden'>
+        <div className='max-w-screen w-full h-screen flex flex-col items-center justify-center  bg-linear-to-b from-[#061021] via-[#071428] to-[#08122a] relative overflow-hidden'>
 
             <div className="absolute flex bottom-0 right-0 w-[300px] h-[500px] bg-pink-600/30 rounded-full blur-[180px]" />
 
@@ -61,10 +61,10 @@ export default function Login() {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <defs>
-                                <linearGradient id="builderGradient" x1="0" y1="0" x2="1" y2="0">
+                                <linearlinear id="builderlinear" x1="0" y1="0" x2="1" y2="0">
                                     <stop offset="0%" stopColor="#00C6FF" />
                                     <stop offset="100%" stopColor="#0072FF" />
-                                </linearGradient>
+                                </linearlinear>
                             </defs>
 
                             {/* Icon */}
@@ -74,7 +74,7 @@ export default function Login() {
                                     cx="35"
                                     cy="35"
                                     r="30"
-                                    stroke="url(#builderGradient)"
+                                    stroke="url(#builderlinear)"
                                     strokeWidth="4"
                                     fill="none"
                                 />
@@ -82,7 +82,7 @@ export default function Login() {
                                 {/* Hammer Shape */}
                                 <path
                                     d="M25 45 L50 20"
-                                    stroke="url(#builderGradient)"
+                                    stroke="url(#builderlinear)"
                                     strokeWidth="5"
                                     strokeLinecap="round"
                                 />
@@ -94,7 +94,7 @@ export default function Login() {
                                     height="8"
                                     rx="2"
                                     transform="rotate(45 48 15)"
-                                    fill="url(#builderGradient)"
+                                    fill="url(#builderlinear)"
                                 />
                             </g>
 
@@ -105,7 +105,7 @@ export default function Login() {
                                 fontSize="36"
                                 fontWeight="700"
                                 fontFamily="Poppins, sans-serif"
-                                fill="url(#builderGradient)"
+                                fill="url(#builderlinear)"
                             >
                                 Build
                             </text>
@@ -182,7 +182,7 @@ export default function Login() {
                         <button
                             type="submit"
                             className={`btn btn-primary rounded-full ${loading ? 'loading' : ''}`}
-                            style={{ background: 'linear-gradient(90deg,#FFD166,#FE9A00)', color: '#061021' }}
+                            style={{ background: 'linear-linear(90deg,#FFD166,#FE9A00)', color: '#061021' }}
                             disabled={loading}
                         >
                             {loading ? "" : "Login"}
